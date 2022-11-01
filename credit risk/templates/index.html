@@ -1,0 +1,73 @@
+<html>
+<head>
+
+</head>
+<body>
+
+    <form action="/predict" method="POST">
+        <label> Gender :</label>
+        
+        <label><input type="radio" value="1" name = "Gender">Female</label>
+        <label><input type="radio" value="0" name = "Gender">Male</label> <br>
+
+        <label> Married :</label>
+        
+        <label><input type="radio" value="1" name = "Married">Yes</label>
+        <label><input type="radio" value="0" name = "Married">No</label> <br>
+
+        <label> Dependents :</label>
+        <select name="Dependents">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3+</option>
+        </select> <br>
+
+        <label> Education :</label>
+        
+        <label><input type="radio" value="1" name = "Education">Graduate</label>
+        <label><input type="radio" value="0" name = "Education">Non Graduate</label> <br>
+
+
+        <label> Self Employed :</label>
+        
+        <label><input type="radio" value="1" name = "Self_Employed">Yes</label>
+        <label><input type="radio" value="0" name = "Self_Employed">No</label> <br>
+        
+
+        <label>Loan Amount Term</label>
+        <input type="number" name="loan_term"><br>
+
+        <label> Credit_History :</label>
+        
+        <label><input type="radio" value="1" name = "Credit_History">Yes</label>
+        <label><input type="radio" value="0" name = "Credit_History">No</label> <br>
+
+        <label> Property Area :</label>
+        <select name="Property_Area">
+            <option value="2">Urban</option>
+            <option value="1">Semi Urban</option>
+            <option value="0">Rural</option>
+        </select> <br>
+
+        <label>Loan Amount </label>
+        <input type="number" name="loan_amount"><br>
+
+        <label>Applicant Income: </label>
+        <input type="number" name="applicant_income"><br>
+
+        <label>Co - Applicant Income: </label>
+        <input type="number" name="coapplicant_income"><br>
+
+        <input type="submit"> <br>
+
+        {{prediction}}
+
+
+
+    </form>
+
+
+
+</body>
+</html>
